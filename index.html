@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
   <title>Monisha S · Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+  </style>
 </head>
 <body>
   <div id="progress"></div>
@@ -34,6 +35,8 @@
       </button>
     </div>
   </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
 
   <main class="container">
     <!-- ============ HERO ============ -->
@@ -96,7 +99,6 @@
       <h2 class="section-title"><i class="fas fa-briefcase"></i> What I Do</h2>
       <p class="section-subtitle">Where I spend most of my time when I'm building something.</p>
       <div class="services-grid">
-
         <div class="service-card">
           <div class="service-icon">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +135,6 @@
           <h3>Full-Stack Web Apps</h3>
           <p>End-to-end builds: a responsive frontend, a working backend, and real data connecting them.</p>
         </div>
-
       </div>
     </section>
 
@@ -193,7 +194,7 @@
           <div class="edu-body edu-left">
             <h3>Bachelor of Science in Computer Science</h3>
             <p><i class="fas fa-map-marker-alt"></i> St. Mary's College</p>
-            <p class="cgpa"><i class="fas fa-star"></i> CGPA: 8.7/ 10</p>
+            <p class="cgpa"><i class="fas fa-star"></i> CGPA: 8.7 / 10</p>
           </div>
           <div class="edu-year">2022 – 2025</div>
         </div>
@@ -205,7 +206,6 @@
       <h2 class="section-title"><i class="fas fa-laptop-code"></i> Projects</h2>
       <p class="section-subtitle">A couple of things I've built that I'm proud of.</p>
       <div class="projects-list">
-
         <div class="project-card">
           <div class="project-visual">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -220,7 +220,7 @@
             <div class="project-header">
               <h3>Fine Arts Management</h3>
             </div>
-            <p class="project-desc">An event management system for fine arts programs, with separate admin and user sides. Beyond managing events, venues, and schedules, it includes a judging system for scoring performances — the trickiest part was keeping all of that data in sync without clashes.</p>
+            <p class="project-desc">An event management system for fine arts programs, with separate admin and user sides. Beyond managing events, venues, and schedules, it includes a judging system for scoring performances.</p>
             <div class="project-stack">
               <span class="project-tech-pill">PHP</span>
               <span class="project-tech-pill">HTML</span>
@@ -241,7 +241,7 @@
             <div class="project-header">
               <h3>BookmarkHub</h3>
             </div>
-            <p class="project-desc">A bookmark manager I built to stop losing track of saved links. I handled authentication with session-based login rather than a plug-in library, along with full CRUD and a MySQL schema designed from scratch.</p>
+            <p class="project-desc">A bookmark manager I built to stop losing track of saved links. Session-based authentication, full CRUD, and a MySQL schema designed from scratch.</p>
             <div class="project-stack">
               <span class="project-tech-pill">Python</span>
               <span class="project-tech-pill">Flask</span>
@@ -251,7 +251,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -300,7 +299,7 @@
   <footer>
     <p>© 2026 Monisha S · Made using HTML, CSS & JavaScript</p>
   </footer>
+<script src="script.js"></script>
 
-  <script src="script.js"></script>
 </body>
 </html>
